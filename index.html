@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./animations/slide-up.css">
+    <link rel="stylesheet" href="./animations/slide-in.css">
+    <link rel="stylesheet" href="./animations/spin.css">
+</head>
+
+<body>
+    <div>
+        <h4>Helpful Links</h4>
+        <a href="https://www.joshwcomeau.com/animation/keyframe-animations/">Keyframe Animations</a>
+        <a href="https://www.joshwcomeau.com/animation/css-transitions">CSS Transitions</a>
+        <a href="https://www.joshwcomeau.com/shadow-palette/">Background Shadow Generator</a>
+    </div>
+    <div>
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                padding: 12px;
+                margin: 12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                border-radius: 5px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .purple {
+                background-color: blueviolet;
+                color: white;
+            }
+
+            .blue {
+                background-color: cyan;
+            }
+
+            .red-bubble {
+                border: 4px solid red;
+                background-color: transparent;
+                border-radius: 46%
+            }
+
+            .slide-up {
+                animation: slide-up 1000ms
+            }
+
+            .slide-in {
+                animation: slide-in 1000ms
+            }
+
+            .spinner {
+                animation: spin 2000ms;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+        </style>
+
+        <div class="box slide-up purple">
+            Slide Up
+        </div>
+
+        <div class="box slide-in blue">
+            Slide In
+        </div>
+
+        <div style="width:100px;height:100px;" class="spinner red-bubble"></div>
+        <div style="width:20px;height:20px;animation-delay:250ms;" class="spinner red-bubble"></div>
+        <div style="width:50px;height:50px;animation-delay:500ms;" class="spinner red-bubble"></div>
+    </div>
+</body>
+
+</html>
